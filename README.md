@@ -15,29 +15,16 @@ This repository contains an implementation of a Vietnamese image captioning syst
 - Config-based training pipeline (YAML).
 - Support for training, evaluation and inference scripts.
 - Evaluation with standard captioning metrics:
-  - BLEU, METEOR, ROUGE-L, CIDEr, SPICE.
+- BLEU, METEOR, ROUGE-L, CIDEr, SPICE.
 - Qualitative examples comparing zero-shot BLIP-1 and LoRA-fine-tuned captions.
 
-## 3. Project Structure
+## Data
 
-```text
-.
-├─ src/
-│  ├─ train.py          # LoRA fine-tuning pipeline
-│  ├─ eval.py           # Evaluation with captioning metrics
-│  ├─ inference.py      # Inference script for new images
-│  ├─ data_loader.py    # UIT-ViIC dataset loader + collator
-│  ├─ utils_common.py   # Path resolving, COCO-style JSON loading
-│  ├─ utils_metrics.py  # COCO metrics (BLEU, METEOR, ROUGE-L, CIDEr, SPICE)
-│  ├─ split_utils.py    # Train/val split helpers
-│  ├─ check_dataset.py  # Dataset sanity checks
-├─ configs/
-│  └─ default.yaml      # Training configuration
-├─ notebooks/
-│  └─ exploration_and_logs.ipynb   # (optional) experiments and logs
-├─ assets/
-│  ├─ loss_curve.png
-│  ├─ metrics_table.png
-│  └─ qualitative_examples.png
-├─ requirements.txt
-└─ README.md
+Dataset: UIT-ViIC
+Source: UIT-ViIC (Vietnamese Image Captioning Dataset).
+Subset: ball sports images derived from COCO.
+Each image: 5 human-written Vietnamese captions.
+Example caption:
+"Một cầu thủ đang sút bóng trong một trận đấu bóng đá."
+
+Note: The dataset is not included in this repository. Please obtain UIT-ViIC from the official source and place it under your data directory.
