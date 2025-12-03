@@ -1,7 +1,5 @@
 # Vietnamese-Image-Captioning-with-BLIP-1-LoRA
 
-# Vietnamese Image Captioning with BLIP-1 and LoRA
-
 This repository contains an implementation of a Vietnamese image captioning system based on the BLIP-1 vision–language model, fine-tuned with Low-Rank Adaptation (LoRA) on the UIT-ViIC dataset (ball sports subset).
 
 ## 1. Overview
